@@ -74,9 +74,9 @@ class Zaptrance
 		$data=[
 			'merchant_id'=>"8347413",
 			'amt'=> "1000",
-			'tid' =>"2",
-			'services_token'=>'kvPhvaZ3bfa9huiyZETZ4o0rd8EkldOnCR1HWK60',
-			'email' =>'email@h.com',
+			'tid' =>request()->transaction_id,
+			'services_token'=>request()->service_id,
+			'email' =>request()->email,
 			'hashed'=>$this->hashed
 		];
 		$this->response=$this->client->post(
