@@ -70,13 +70,13 @@ class Zaptrance
 		
 
 
-		$this->hashed= Generate::my_hash($this->merchantID,$this->apikey,$Serviceid,'1000','2');
+		$this->hashed= Generate::my_hash($this->merchantID,$this->apikey,$Serviceid,request()->amount,request()->transaction_id);
 		$data=[
-			'merchant_id'=>"8347413",
-			'amt'=> "1000",
+			'merchant_id'=>$this->merchantID,
+			'amt'=> request()->amount,
 			'tid' =>request()->transaction_id,
-			'services_token'=>request()->service_id,
-			'email' =>request()->email,
+			'services_token'=>request()->service_token,
+			'identifier' =>request()->email,
 			'hashed'=>$this->hashed
 		];
 		$this->response=$this->client->post(

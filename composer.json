@@ -30,7 +30,7 @@
             "Zaptrance\\Payment\\ZaptranceServiceProvider"
         ],
         "aliases": {
-            "Zaptrance": "Zaptrance\\Payment\\Facades"
+            "Zaptrance": "Zaptrance\\Payment\\Facades\\Zaptrance"
         }
     }
 }
