@@ -8,15 +8,15 @@
       {
         "name": "AuwalDev",
         "email": "kasimauwala@gmail.com"
-      }
-      
-   ],
+    }
+    
+],
 
     "require": {
-    "php": "^5.4.0|^7.0",
-    "illuminate/support": "5.*|6.*",
-    "guzzlehttp/guzzle": "5.*|6.*"
-   },
+        "php": "^5.4.0|^7.0",
+        "illuminate/support": "5.*|6.*",
+        "guzzlehttp/guzzle": "5.*|6.*"
+    },
 
     "autoload": {
         "psr-4": {
@@ -25,14 +25,14 @@
     },
 
     "extra": {
-    "laravel": {
-        "providers": [
-            "Zaptrance\\Payment\\ZaptranceServiceProvider"
-        ],
-        "aliases": {
-            "Zaptrance": "Zaptrance\\Payment\\Facades\\Zaptrance"
+        "laravel": {
+            "providers": [
+                "Zaptrance\\Payment\\ZaptranceServiceProvider"
+            ],
+            "aliases": {
+                "Zaptrance": "Zaptrance\\Payment\\Facades\\Zaptrance"
+            }
         }
     }
-}
 
 }
